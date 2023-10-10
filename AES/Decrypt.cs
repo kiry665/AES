@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace AES
 {
@@ -35,6 +28,7 @@ namespace AES
                 if (textBox1.Text.Length == 0)
                 {
                     MessageBox.Show("Введите хотя бы один символ в поле Ключ 1");
+                    return;
                 }
                 else
                 {
@@ -52,6 +46,7 @@ namespace AES
                 if (textBox2.Text.Length == 0)
                 {
                     MessageBox.Show("Введите хотя бы один символ в поле Ключ 2");
+                    return;
                 }
                 else
                 {
